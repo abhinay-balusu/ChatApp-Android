@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MessagingApp</string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="loginText">Login</string>
+    <string name="signupText">Sign Up</string>
+    <string name="fblogin">Login using Facebook</string>
+    <string name="glogin">Login using Gmail</string>
+    <string name="firstNameHint">First Name</string>
+    <string name="lNameHint">Last Name</string>
+    <string name="retypePasswordHint">Retype Password</string>
+    <string name="cancelText">Cancel</string>
+    <string name="facebook_app_id">facebook_app_id</string>
+    <string name="updateString">Update</string>
+    <string name="fNameString">First Name</string>
+    <string name="lNameString">Last Name</string>
+</resources>

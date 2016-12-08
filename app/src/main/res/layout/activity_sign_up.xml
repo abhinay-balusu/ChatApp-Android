@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profileImageView"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/fNameET"
+        android:hint="@string/firstNameHint"
+        android:layout_below="@+id/profileImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/lNameET"
+        android:layout_below="@+id/fNameET"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/lNameHint" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:id="@+id/genderSwitch"
+        android:textOn="Male"
+        android:textOff="Female"
+        android:layout_below="@+id/lNameET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/genderValueTextView"
+        android:layout_toLeftOf="@+id/genderValueTextView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailET_SignUP"
+        android:layout_below="@+id/genderSwitch"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/emailHint" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordET_SignUP"
+        android:layout_below="@+id/emailET_SignUP"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/passwordHint" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/rpEditText"
+        android:layout_below="@+id/passwordET_SignUP"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/retypePasswordHint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelText"
+        android:id="@+id/cancelButton_edit"
+        android:layout_below="@+id/rpEditText"
+        android:layout_alignLeft="@+id/rpEditText"
+        android:layout_alignStart="@+id/rpEditText"
+        android:layout_marginTop="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signupText"
+        android:id="@+id/signUpBtn"
+        android:layout_alignTop="@+id/cancelButton_edit"
+        android:layout_alignRight="@+id/rpEditText"
+        android:layout_alignEnd="@+id/rpEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/genderValueTextView"
+        android:layout_below="@+id/lNameET"
+        android:layout_alignLeft="@+id/profileImageView"
+        android:layout_alignStart="@+id/profileImageView"
+        android:layout_alignBottom="@+id/genderSwitch"
+        android:layout_alignRight="@+id/lNameET"
+        android:layout_alignEnd="@+id/lNameET"
+        android:paddingLeft="10dp" />
+
+
+</RelativeLayout>
